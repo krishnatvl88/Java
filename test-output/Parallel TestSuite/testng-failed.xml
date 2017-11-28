@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestNG.TestNG_SeleniumParametersParallelExample">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- TestNG.TestNG_SeleniumParametersParallelExample -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Parallel TestSuite] -->
